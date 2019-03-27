@@ -12,18 +12,18 @@
     <header id="main-header">
         <h1>Vibes 420</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="main-nav">
+                <li class="main-nav-item"><a href="index.html">Home</a></li>
+                <li class="main-nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="main-nav-item"><a href="#skills">Skills</a></li>
+                <li class="main-nav-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
-        <figure>
-            <img src="images/responsive-layout-profile.png" alt="Profile Photo">
+        <figure class="profile">
+            <img src="images/responsive-layout-profile.png" alt="Profile Photo" class="profile-photo">
             <figcaption>
-                <p>
+                <p class="profile-p">
                     Hi, I'm an aspiring front-end developer who loves responsive design and css.
                     I recently started the FETD at Treehouse and am excited to put all my skills to use!
                 </p>
@@ -32,64 +32,64 @@
     </header>
 
     <main id="main-container">
-        <section id="portfolio">
+        <section id="portfolio" class="portfolio">
             <h2>Portfolio</h2>
-            <figure>
-                <img src="images/portfolio-1.png" alt="project-1 image">
+            <figure class="project">
+                <img src="images/portfolio-1.png" alt="project-1 image" class="project-photo">
                 <figcaption>
-                    <h3>Marketing Page</h3>
-                    <p>This project shows the front page of a marketing website
+                    <h3 class="project-heading">Marketing Page</h3>
+                    <p class="project-p">This project shows the front page of a marketing website
                         meant for a specific business I'm interested in.
                     </p>
                 </figcaption>
             </figure>
-            <figure>
-                <img src="images/portfolio-2.png" alt="project-2 image">
+            <figure class="project">
+                <img src="images/portfolio-2.png" alt="project-2 image" class="project-photo">
                 <figcaption>
-                    <h3>Search Page</h3>
-                    <p>This project searches through a specific database to find information that the
+                    <h3 class="project-heading">Search Page</h3>
+                    <p class="project-p">This project searches through a specific database to find information that the
                         user is trying to look up.
                     </p>
                 </figcaption>
             </figure>
-            <figure>
-                <img src="images/portfolio-3.png" alt="project-3 image">
+            <figure class="project">
+                <img src="images/portfolio-3.png" alt="project-3 image" class="project-photo">
                 <figcaption>
-                    <h3>Travel App</h3>
-                    <p>This project compares travel times based on the different transportation
+                    <h3 class="project-heading">Travel App</h3>
+                    <p class="project-p">This project compares travel times based on the different transportation
                         methods and tells you the best one.
                     </p>
                 </figcaption>
             </figure>
-            <figure>
-                <img src="images/portfolio-4.png" alt="project-4 image">
+            <figure class="project">
+                <img src="images/portfolio-4.png" alt="project-4 image" class="project-photo">
                 <figcaption>
-                    <h3>Map of Favorite Spots</h3>
-                    <p>This project uses mapping apis to plot points for my Favorite spots in
+                    <h3 class="project-heading">Map of Favorite Spots</h3>
+                    <p class="project-p">This project uses mapping apis to plot points for my Favorite spots in
                         the city for a do-it-yourself walking tour.
                     </p>
                 </figcaption>
             </figure>
-            <figure>
-                <img src="images/portfolio-5.png" alt="project-5 image">
+            <figure class="project">
+                <img src="images/portfolio-5.png" alt="project-5 image" class="project-photo">
                 <figcaption>
-                    <h3>Photo Gallery</h3>
-                    <p>This project shows pictures from a recent trip to the viewer and allows
+                    <h3 class="project-heading">Photo Gallery</h3>
+                    <p class="project-p">This project shows pictures from a recent trip to the viewer and allows
                         them to easily navigate through photos.
                     </p>
                 </figcaption>
             </figure>
-            <figure>
-                <img src="images/portfolio-6.png" alt="project-6 image">
+            <figure class="project">
+                <img src="images/portfolio-6.png" alt="project-6 image" class="project-photo">
                 <figcaption>
-                    <h3>Calculator</h3>
-                    <p>Someone can enter in the numbers they want and press 
+                    <h3 class="project-heading">Calculator</h3>
+                    <p class="project-p">Someone can enter in the numbers they want and press 
                         the big blue button and get the result.
                     </p>
                 </figcaption>
             </figure>
         </section>
-        <section>
+        <section id="skills" class="skills">
             <h2>Skillset</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                 Error voluptatem earum sit, maxime ratione ea corporis enim 
@@ -99,24 +99,37 @@
             <p>Lorem ipsum explicabo, odit aut hic commodi veritatis 
                 fugiat impedit saepe, doloremque ullam quasi id officiis?
             </p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-                <li>PYTHON</li>
-                <li>PHP</li>
+            <h4>Visual Overview of Skillset</h4>
+            <ul class="main-skills">
+                <li class="main-skills-item"><span class="html">HTML</span><i>75&percnt;</i></li>
+                <li class="main-skills-item"><span class="css">CSS</span><i>35&percnt;</i></li>
+                <li class="main-skills-item"><span class="javascript">Javascript</span><i>45&percnt;</i></li>
+                <li class="main-skills-item"><span class="python">Python</span><i>70&percnt;</i></li>
+                <li class="main-skills-item"><span class="php">PHP</span><i>30&percnt;</i></li>
             </ul>
         </section>
-        <section>
+        <section id="contact" class="contact">
             <h2>Contact</h2>
             <p>If you're interested in chatting or want more infomation about
                 what I've been working on, I'd love to hear from you!
             </p>
-            <span>Phone <a href="tel:+1(111)555-1234">+1(111) 555-1234</a></span><br>
-            <span>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></span>
+            <span>Phone: <a href="tel:+1(111)555-1234">+1(111) 555-1234</a></span><br>
+            <span>Email: <a href="mailto:email@yoursite.com">email@yoursite.com</a></span>
+            <form action="index.html" method="post" class="contact-form">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" name="user_name" id="name"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="user_email" id="email"><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea><br>
+                </fieldset>
+                    <button type="submit">Send</button>
+            </form>
         </section>
     </main>
-    <footer>
+    <footer id="main-footer">
         <span>Vibes 420</span>
         <a href="#top">BACK TO TOP</a>
         <ul>

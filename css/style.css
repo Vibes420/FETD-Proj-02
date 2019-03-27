@@ -1,10 +1,19 @@
 /*********************
 ******BASE STYLES*****
 ***********************/
+* {
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+html {
+    font-size: 62.5%;
+}
 
 body {
     text-align: center;
     color: #030303;
+    font-size: 1.6rem;
 }
 
 img {
@@ -12,7 +21,7 @@ img {
 }
 
 figure {
-    margin: 25px 0;
+    margin: 2.5rem 0;
 }
 
 li {
@@ -34,11 +43,167 @@ p {
     letter-spacing: 1px;
 }
 
+h2 {
+    text-transform: uppercase;
+}
 
 /*********************
 ******Layout STYLES*****
 ***********************/
 #main-header {
-    padding: 1px 15px 0 15px;
+    padding: 0.1rem 1.5rem 2.5rem 1.5rem;
     background-color: #fcf7f3;
+}
+#main-container {
+
+}
+
+#portfolio {
+    padding: 2.5rem 1.5rem;
+    background-color: #fff;
+}
+
+#skills {
+    padding: 2.5rem 1.5rem;
+    background-color: #fcf7f3;
+}
+
+#contact {
+    padding: 2.5rem 1.5rem;
+    background-color: #fff;
+}
+
+#main-footer {
+    padding: 0.1rem 1.5rem 2.5rem 1.5rem;
+    background-color: #fcf7f3;
+}
+
+
+
+/*********************
+******Module STYLES*****
+***********************/
+
+/******Header*******/
+.main-nav-item {
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+}
+.main-nav-item  > a {
+    display: block;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+}
+
+.profile-photo {
+    width: 70%;
+    padding: 2.5rem 0;
+}
+
+/******Portoflio*******/
+.portfolio > h2 {
+    padding: 0 0 1.5rem;
+}
+
+.project-photo {
+    padding-bottom: 1.5rem;
+}
+
+.project-heading,
+.project-p {
+    color: #3b3a3a;
+}
+
+/******Skillset*******/
+.skills > p { 
+    padding-bottom: 1.5rem;
+}
+
+
+.main-skills {
+    text-align: left;
+}
+
+.main-skills-item {
+    position: relative;
+    height: 3.5rem;
+    background-color: grey;
+    margin-bottom: 1.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.main-skills-item > span{
+    display: inline-block;
+    height: 3.5rem;
+    text-transform: uppercase;
+    line-height: 3.5rem;
+    border-radius: 0 1rem 1rem 0;
+    -webkit-border-radius: 0 1rem 1rem 0;
+    -moz-border-radius: 0 1rem 1rem 0;
+    -ms-border-radius: 0 1rem 1rem 0;
+    -o-border-radius: 0 1rem 1rem 0;
+}
+
+.main-skills-item > i {
+    display: inline-block;
+    position: absolute;
+    right: 0.3rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    color: turquoise;
+}
+
+.html {
+    width: 75%;
+    background-color: #54BBB4;
+}
+
+.css {
+    width: 35%;
+    background-color: #E3AC24;
+}
+
+.javascript {
+    width: 45%;
+    background-color: #635B82;
+}
+
+.python {
+    width: 70%;
+    background-color: #2473AB;
+}
+
+.php {
+    width: 30%;
+    background-color: #EA8576;
+}
+
+
+/******CONTACT*******/
+.contact > p {
+    padding-bottom: 1.5rem;
+}
+
+.contact-form {
+    margin-top: 5rem;
+    text-align: left;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+}
+
+.contact-form legend {
+    text-align: center;
 }

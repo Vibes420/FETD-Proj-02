@@ -3,7 +3,7 @@
 ***********************/
 * {
     box-sizing: border-box;
-    /* border: 1px solid; */
+    border: 1px solid;
 }
 
 html {
@@ -368,6 +368,12 @@ h2, h1 {
 
     .skills-visuals {
         flex-basis: 42%;
+    }
+
+    .skills > h2,
+    .skills-info,
+    .skills-visuals {
+        margin: 0 auto;
     }
 
 

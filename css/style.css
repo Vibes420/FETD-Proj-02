@@ -3,6 +3,7 @@
 ***********************/
 * {
     box-sizing: border-box;
+    /* border: 1px solid; */
 }
 
 html {
@@ -297,4 +298,83 @@ h2, h1 {
 .contact-form input:focus {
     border-bottom: 0.2rem solid #54BBB4;
 }
+
+@media(min-width: 769px){
+    /******Header*******/
+    .main-header {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-nav {
+        display: flex;
+        justify-content: center;
+    }
+    .main-nav-item {
+        margin-right: 3rem;
+        background-color: initial;
+    }
+
+    .main-nav-item > a {
+        padding: 0.5rem;
+    }
+
+    .profile {
+        display: flex;
+    }
+    
+    .profile-p {
+        margin: 0px;
+    }
+
+    .profile-photo {
+        flex-basis: 35%;
+        padding: 0 0 0 1rem;
+        order: 1;
+    }
+    .profile > figcaption {
+        flex-basis: 65%;
+    }
+
+    /******Portfolio*******/
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .project {
+        flex-basis: 48%;
+        padding: 0 5px;
+        margin: 1.5rem auto;
+    }
+
+     .portfolio > h2 {
+        flex-basis: 100%;
+    }
+
+  /******Skills*******/
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .skills > h2 {
+        flex-basis: 100%;
+    }
+
+    .skills-info {
+        flex-basis: 55%;
+    }
+
+    .skills-visuals {
+        flex-basis: 42%;
+    }
+
+
+
+
+
+}
+
+
 

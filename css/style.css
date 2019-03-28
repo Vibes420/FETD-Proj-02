@@ -3,7 +3,6 @@
 ***********************/
 * {
     box-sizing: border-box;
-    border: 1px solid;
 }
 
 html {
@@ -43,7 +42,7 @@ p {
     letter-spacing: 1px;
 }
 
-h2 {
+h2, h1 {
     text-transform: uppercase;
 }
 
@@ -74,7 +73,7 @@ h2 {
 }
 
 #main-footer {
-    padding: 0.1rem 1.5rem 2.5rem 1.5rem;
+    padding:  1.5rem 1.5rem;
     background-color: #fcf7f3;
 }
 
@@ -87,7 +86,7 @@ h2 {
 /******Header*******/
 .main-nav-item {
     background-color: #fff;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.4rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
@@ -110,6 +109,10 @@ h2 {
     padding: 0 0 1.5rem;
 }
 
+.project {
+    padding-bottom: 5px;
+}
+
 .project-photo {
     padding-bottom: 1.5rem;
 }
@@ -123,7 +126,9 @@ h2 {
 .skills > p { 
     padding-bottom: 1.5rem;
 }
-
+.skills > h4 {
+    text-transform: capitalize;
+}
 
 .main-skills {
     text-align: left;
@@ -146,6 +151,8 @@ h2 {
     height: 3.5rem;
     text-transform: uppercase;
     line-height: 3.5rem;
+    padding-left: 0.2rem;
+    font-size: 1rem;
     border-radius: 0 1rem 1rem 0;
     -webkit-border-radius: 0 1rem 1rem 0;
     -moz-border-radius: 0 1rem 1rem 0;
@@ -193,6 +200,15 @@ h2 {
     padding-bottom: 1.5rem;
 }
 
+.contact > span {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+.contact > span > a {
+    cursor: pointer;
+}
+
 .contact-form {
     margin-top: 5rem;
     text-align: left;
@@ -202,8 +218,83 @@ h2 {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
+    display: inline-block;
+    outline: 0;
 }
 
+.contact-form label {
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+
+.contact-form > fieldset {
+    border: none;
+}
 .contact-form legend {
     text-align: center;
+    font-size: 2.4rem;
+    color: #545351;
 }
+
+.contact-form  input {
+    padding: 1rem 0;
+}
+
+.contact-form textarea,
+.contact-form input {
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin-bottom: 1.6rem;
+}
+
+.contact-form button {
+    display: block;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-style: none;
+    outline: 0;
+    cursor: pointer;
+    color: #fff; 
+    background-color: #54BBB4;
+    text-transform: uppercase;
+    margin: 0 auto;
+    
+}
+
+/******Footer*******/
+.footer {
+    display: flex;
+}
+.footer-nav {
+    display: none;
+}
+
+.footer span {
+    margin-right: auto;
+    text-transform: uppercase;
+}
+
+.footer span,
+.footer a {
+    font-size: 2rem;
+    color: #545351;
+}
+
+
+/*********************
+******STATES STYLES*****
+***********************/
+
+.main-nav-item > a:hover,
+.main-nav-item > a:active,
+.contact-form input:focus {
+    border-bottom: 0.2rem solid #54BBB4;
+}
+

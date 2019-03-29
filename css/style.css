@@ -340,7 +340,8 @@ h2, h1 {
         order: 1;
     }
     .profile > figcaption {
-        flex-basis: 65%;
+        flex-basis: 62%;
+        margin-right: auto;
     }
 
     /******Portfolio*******/
@@ -465,6 +466,7 @@ h2, h1 {
     }
     .profile {
         flex-basis: 100%;
+        margin-top: 4.5rem;
     }
     .main-nav {
         margin: 0;
@@ -477,6 +479,7 @@ h2, h1 {
     .project {
         flex-basis: 32%;
     }
+
 
 }
 

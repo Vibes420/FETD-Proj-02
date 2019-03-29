@@ -3,7 +3,6 @@
 ***********************/
 * {
     box-sizing: border-box;
-    /* border: 1px solid; */
 }
 
 html {
@@ -13,6 +12,7 @@ html {
 body {
     text-align: center;
     color: #030303;
+    font-family: 'Roboto Mono', monospace, sans-serif;
     font-size: 1.6rem;
 }
 
@@ -448,8 +448,36 @@ h2, h1 {
 /*****Device 1024px...***/
 @media(min-width: 1024px) {
     .level-up {
-    ;
+        width: 90%;
+        max-width: 1150px;
+        margin-right: auto;
+        margin-left: auto;
     }
+
+    /*******HEADER*****/
+    .main-header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .main-header > h1 {
+        margin-right: auto;
+    }
+    .profile {
+        flex-basis: 100%;
+    }
+    .main-nav {
+        margin: 0;
+    }
+    .main-nav-item {
+        margin-bottom: 0;
+    }
+
+    /*****Portfolio******/
+    .project {
+        flex-basis: 32%;
+    }
+
 }
 
 

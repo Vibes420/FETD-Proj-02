@@ -226,7 +226,7 @@ h2, h1 {
 
 .contact-form label {
     padding-bottom: 5px;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .contact-form > fieldset {
@@ -234,7 +234,7 @@ h2, h1 {
 }
 .contact-form legend {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: #545351;
 }
 
@@ -298,6 +298,8 @@ h2, h1 {
 .main-nav-item > a:active,
 .footer-nav li > a:hover,
 .footer-nav li > a:active,
+.contact-info > span > a:hover,
+.contact-info > span > a:active,
 .contact-form input:focus {
     border-bottom: 0.2rem solid #54BBB4;
 }
@@ -480,7 +482,16 @@ h2, h1 {
         flex-basis: 32%;
     }
 
+    /*****Skills******/
+    .skills-info,
+    .skills-visuals {
+        flex-basis: 48%;
+    }
 
+     /*****Contact ******/
+     .contact > h2 {
+         margin-bottom: 4.5rem;
+     }
 }
 
 
